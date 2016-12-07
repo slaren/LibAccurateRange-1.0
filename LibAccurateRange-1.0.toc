@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: LibAccurateRange-1.0
+## Notes: 40 yard range detection
+## Author: Slaren
+## Dependencies: Ace2
+
+AccurateRange.lua
