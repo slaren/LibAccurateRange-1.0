@@ -298,7 +298,7 @@ local update_interval = 0.005
 local max_updates_per_frame = 3
 local restore_attack = false
 local current_frame = 0
-local max_uptime_time_ns = 2000000
+local max_update_time_ns = 2000000
 local function AccurateRange_OnUpdate()
 	current_frame = current_frame + 1
 	-- AttackTarget won't work on the same frame that the target changed, so try
@@ -356,7 +356,7 @@ local function AccurateRange_OnUpdate()
 		end
 
 		local elapsed_time = debugprofilestop() - start_time
-		if elapsed_time > max_uptime_time_ns then
+		if elapsed_time > max_update_time_ns then
 			break
 		end
 	end
